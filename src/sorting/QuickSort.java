@@ -13,26 +13,25 @@ public class QuickSort {
 		generateRandomArray(array);
 		
 		quickSort(array, 0, array.length-1);
-		//checkSorted(array);
+		
 		printArray(array);		
 	}
 
 	static void quickSort(int[] array, int left, int right){
 		
-		if(right - left < 2){
+		if(right - left < 1){
 			return;
 		}
 		int pivot = (array[left] + array[right])/2;
-		
 		int i = left, j = right;
 		
 		while(i<j){
-			while(i < j && array[i] <= pivot){
+			while(i <= j && array[i] <= pivot){
 				i++;
 				if(i==right)
 					break;
 			}
-			while(i < j && array[j] > pivot){
+			while(i <= j && array[j] > pivot){
  				j--;
  				if(j==left) 
  					break;
@@ -57,7 +56,7 @@ public class QuickSort {
 		}
 	}
 	
-	static Random r = new Random(0);
+	static Random r = new Random();
 	static void generateRandomArray(int[] array){
         for(int i = 0; i <  array.length; i++) {
         	array[i] = r.nextInt(100);
