@@ -14,7 +14,7 @@ public class LinearSearch {
 	
 	static void linearSearch(int[] array, int number){
 		if(!IntStream.of(array).anyMatch(x -> x == number)){
-			printResult(false, number, (Integer) null);
+			printResult(false, number, 0);
 			System.exit(0);
 		}
 		for(int i=0; i < array.length-1; i++){
