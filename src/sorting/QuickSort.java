@@ -7,10 +7,10 @@ public class QuickSort {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//int array[] = new int[]{10,5,3,4,9,2};
-		//int array[] = new int[]{10,65,3,98,1,5,7,3,4,9,2,8,1,4,9,5,3,1,7,8,33};
-		int[] array = new int[10];
+		int array[] = new int[]{5, 4, 4, 4, 4, 1};
+		//int[] array = new int[10];
 		
-		generateRandomArray(array);
+		//generateRandomArray(array);
 		
 		quickSort(array, 0, array.length-1);
 		
