@@ -1,3 +1,7 @@
+// AUTHOR: Parth Pandya
+// ref: http://www.java2s.com/Code/Java/Collections-Data-Structure/Hashtablewithlinearprobing.htm
+
+
 package structure;
 
 import java.io.IOException;

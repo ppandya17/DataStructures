@@ -1,3 +1,7 @@
+// AUTHOR: Parth Pandya
+// ref: http://www.geeksforgeeks.org/implementing-our-own-hash-table-with-separate-chaining-in-java
+
+
 package structure;
 
 import java.io.BufferedReader;
