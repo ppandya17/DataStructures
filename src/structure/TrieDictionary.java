@@ -49,6 +49,8 @@ public class TrieDictionary {
 	}
 
 	public static void searchWord(String word){
+		
+		System.out.print("Entire Word Search: ");
 		if(!root.containsKey(word.charAt(0))){
 			System.out.println(false);
 			return;
@@ -80,7 +82,8 @@ public class TrieDictionary {
 	}
 	
 	public static void prefix(String word){
-		
+		System.out.println();
+		System.out.print("Prefix Search: ");
 		if(!root.containsKey(word.charAt(0))){
 			System.out.println("No words start with: "+ word);
 			return;
@@ -90,6 +93,7 @@ public class TrieDictionary {
 	}
 	
 	public static void prefixTrie(String parentWord, String word, Node node){
+		
 		Node nextnode;
 		
 		if(!node.children.containsKey(word.charAt(0))){
@@ -155,8 +159,7 @@ public class TrieDictionary {
     			System.exit(1);                    
     	}	
     	
-		System.out.println("");
-    	System.out.println("check values frlom file");
+		System.out.println("check values frlom file");
     	
     	Scanner sc = new Scanner( 
     			new BufferedReader(
